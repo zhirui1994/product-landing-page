@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="icon" href="./yin-yang-fish.ico" />
+    <title>Product Landing Page</title>
+    <script src="./test.js"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        #header {
+            height: 45px;
+        }
+        #header.fixed {
+            top: 0;
+            position: fixed;
+            width: 100%;
+            background: #efefef;
+        }
+        .icon-container {
+            float: left;
+            margin-left: 10px;
+        }
+        #header-img {
+            height: 40px;
+            width: 40px;
+            vertical-align: middle;
+        }
+        #icon-text {
+            font-size: 30px;
+            vertical-align: middle;
+        }
+        #nav-bar {
+            float: right;
+        }
+        .nav-link {
+            height: 40px;
+            line-height: 40px;
+            margin-right: 15px;
+        }
+        .clear-fix::after{
+            content: '';
+            display: block;
+            clear: both;
+        }
+    </style>
+</head>
+<body>
+    <header id="header" class="clear-fix">
+        <div class="icon-container">
+            <img id="header-img" src="./yin-yang-fish.png" ondragstart="return false;"/>
+            <span id="icon-text">道家</span>
+        </div>
+        <nav id="nav-bar">
+            <a class="nav-link">视屏简介</a>
+            <a class="nav-link">道家定义</a>
+            <a class="nav-link">思想来源</a>
+            <a class="nav-link">联系我们</a>
+        </nav>
+    </header>
+    <section>
+        <h3>视屏简介</h3>
+        <iframe id="vedio" width="738" height="415" src="https://www.youtube.com/embed/an26nuyKlPA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </section>
+    <section>
+        <h3>道家定义</h3>
+        <p>道家的起源，可以一直追溯到泰古二皇，春秋时期，老子集古圣先贤之大智慧，总结了古老的道家思想的精华，形成了无为无不为的道德理论。标志这道家思想已经正式成型。从此成为古往今来治国治家的至尊宝术。以黄帝、伊尹、太公、辛甲、鬻子、老子、文子、列子、庄子、管子、鹖冠子等等为主要代表，主张“无为、璞朴、与时迁移，应物变化，”等等。尤其重要的是，道家虽有经典著作，可思想并不圈囿（quānyòu）于著作之中。道家思想的形成是以总结、发展、著典籍为主要路径，每一次思想的跳跃都经历了极其长时间的众人积累，这也再一次的凸显了道家的生命力。道家人物既可入世建功；亦可功成弗居（功成身退），在历史长河中每当灾世来临之时，道家人物以一身浩然道气挑战灾难乱源，诛邪卫道，拨乱反正，也因此激荡出众多脍炙人口的传奇篇章。</p>
+        <p>鹖冠子也在教育庞煖之时，将一位道家学者的基本修行方向罗列了出来，他称之为九道，分别是“「一曰道德，二曰阴阳，三曰法令，四曰天官，五曰神徵，六曰伎艺，七曰人情，八曰械器，九曰处兵。」”缺一不可，只能多不可以少，能成为道家的人必须是全面的人才。</p>
+        <p>道因应无方，惟变所适。史公司马谈在《论六家旨要》所论。道家“与时迁移，应物变化”、“虚无为本，因循为用”，“无成执，无常形”、“因时为业”、“时变是守”。故太史公突出强调‘变’。这得益于道家所具有的职业优势和深厚的知识背景。道家出自史官，在古代，史官的职责主要为观察星象、制定历法、管理王室典籍和收藏档案，掌管着华夏部落母系社会到父系社会所有官方所拥有的珍贵典籍，故其为通晓当时一切知识部门的伟大学者。</p>
+    </section>
+    <section>
+        <h3>思想来源</h3>
+        <strong>《史记》中《论六家要旨》：</strong>
+        <p>道家使人精神专一，动合无形，赡足万物。其为术也，因阴阳之大顺，采儒墨之善，撮名法之要，与时迁移，应物变化，立俗施事，无所不宜，指约而易操，事少而功多。</p>
+        <p>道家无为，又曰无不为，其实易行，其辞难知。其术以虚无为本，以因循为用。无成埶，无常形，故能究万物之情。不为物先，不为物后，故能为万物主。</p>
+        <strong>《汉书·艺文志》：</strong>
+        <p>道家者流，盖出于史官，历记成败存亡祸福古今之道，然后知秉要执本，清虚以自守，卑弱以自持，此君人南面之术也。合于尧之克攘，易之嗛嗛，一谦而四益，此其所长也。及放者为之，则欲绝去礼学，兼弃仁义，曰独任清虚可以为治。</p>
+        <strong>《中国大百科全书·哲学》：</strong>
+        <p>中国古代主要哲学派别之一，以道为世界最后的本原，故名为道家。创始人老子。其主要代表人物还有关尹、庄子、彭蒙、田骈等，主要著作除了《老子》、《庄子》外，还有《黄帝内经》、《文子》、《列子》、《管子》、《鹖冠子》、《吕氏春秋》和《淮南子》、等。</p>
+        <p>道家以道为世界的本原，以柔弱因循为道的作用，在政治上主张无为而治，因为对道和无为的理解不同，所以内部又划分为不同派别，不同的学派之间思想重心也不同，或偏于治国，或偏于治身等。三十七家，九百九十三篇每篇每个学派各不相同各，都其独特的风格与特点。</p>
+        <p>道家“道生一，一生二，二生三，三生万物”宇宙论体系，与《易传》所提出的“易有太极，是生两仪，两仪生四象，四象生八卦”相类。老子认为是三（三才）生万物；孔子认为是阴阳、四象（老阴老阳、少阴少阳）生万物。</p>
+    </section>
+    <section>
+        <h3>联系我们</h3>
+        <p>如果您对此感兴趣，请留下您的邮箱方便我们能够取得联系！</p>
+        <form id="form" action="https://www.freecodecamp.com/email-submit">
+            <input id="email" type="email" placeholder="请输入您的邮箱地址" /> 
+            <input id="submit" type="submit" />
+        </form>
+    </section>
+    <script>
+        window.onload = function() {
+            var header = document.getElementById('header');
+            window.onscroll = function() {
+                if (window.scrollY === 0) {
+                    if (header.classList.contains('fixed')) {
+                        header.classList.remove('fixed');
+                    }
+                } else {
+                    if (!header.classList.contains('fixed')) {
+                        header.classList.add('fixed');
+                    }
+                }
+            }
+        }
+    </script>
+</body>
+</html>
