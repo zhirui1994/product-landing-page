@@ -16,6 +16,7 @@
             position: fixed;
             width: 100%;
             height: 45px;
+            display: flex;
         }
         #header.fixed {
             background: #efefef;
@@ -25,6 +26,7 @@
         .icon-container {
             float: left;
             margin-left: 60px;
+            justify-content: flex-start;
         }
         #header-img {
             height: 40px;
@@ -37,6 +39,7 @@
         }
         #nav-bar {
             float: right;
+            justify-content: flex-end;
         }
         .nav-link {
             height: 40px;
@@ -48,11 +51,6 @@
         .nav-link:hover {
             background: black;
             color: white;
-        }
-        .clear-fix::after{
-            content: '';
-            display: block;
-            clear: both;
         }
         h3 {
             height: 35px;
@@ -70,11 +68,40 @@
         }
         p {
             text-indent: 2rem;
+            padding: 5px 20px;
+        }
+        #form {
+            height: 100px;
+            text-align: center;
+        }
+        .contact-text {
+            text-align: center;
+            padding: 20px;
+            font-weight: bold;
+        }
+        #email {
+            height: 30px;
+            width: 250px;
+            padding: 0 5px;
+        }
+        #submit {
+            width: 150px;
+            height: 34px;
+            background: black;
+            color: #fff;
+            border: 0;
+        }
+        @media (max-width: 800px)  {
+            #email, #submit {
+                width: 100%;
+                margin-bottom: 10px;
+                text-align: center;
+            }
         }
     </style>
 </head>
 <body>
-    <header id="header" class="clear-fix">
+    <header id="header">
         <div class="icon-container">
             <img id="header-img" src="./yin-yang-fish.png" ondragstart="return false;"/>
             <span id="icon-text">道家</span>
@@ -110,10 +137,10 @@
     </section>
     <section>
         <h3 id="contact">联系我们</h3>
-        <p>如果您对此感兴趣，请留下您的邮箱方便我们能够取得联系！</p>
+        <p class="contact-text">如果您对此感兴趣，请留下您的邮箱方便我们能够取得联系！</p>
         <form id="form" action="https://www.freecodecamp.com/email-submit">
             <input id="email" name="email" type="email" placeholder="请输入您的邮箱地址" /> 
-            <input id="submit" type="submit" />
+            <input id="submit" type="submit" value="提交邮箱" />
         </form>
     </section>
     <script>
